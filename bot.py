@@ -105,6 +105,26 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
+# output = to_categorical(output, nb_classes=len(output[0]))
+
+# # Define the neural network architecture
+# net = tflearn.input_data(shape=[None, len(training[0])])
+# net = tflearn.fully_connected(net, 16, activation='relu')
+# net = tflearn.dropout(net, 0.5)  # Add dropout for regularization
+# net = tflearn.fully_connected(net, 16, activation='relu')
+# net = tflearn.dropout(net, 0.5)
+# net = tflearn.fully_connected(net, len(output[0]), activation='softmax')
+# net = tflearn.regression(net, optimizer='adam', learning_rate=0.001, loss='categorical_crossentropy')
+
+# Create the model
+# model = tflearn.DNN(net)
+
+# Train the model
+# model.fit(training, output, n_epoch=50, batch_size=16, show_metric=True, snapshot_epoch=True)
+
+# Save the improved model
+# model.save("improved_model.tflearn")
+
 
 try:
     model.load("model.tflearn")
