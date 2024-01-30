@@ -43,6 +43,36 @@
         "patterns": ["what dont you like", "what do you hate", "Not your vibe", "Not into it"],
         "responses": ["I hate fake people!", "People who pretend work on my last nerve!", "I can't stand pork!"],
         "context_set": ""
-       }
-   ]
+       },
+        {
+         "tag": "flight_search",
+         "patterns": ["Find a flight", "Search for flights", "I want to travel"],
+         "responses": ["Sure! Where are you flying from and to?"],
+         "context_set": "flight_search"
+        },
+        {
+         "tag": "provide_flight_info",
+         "patterns": ["I'm flying from {departure} to {destination}", "From {departure} to {destination}"],
+         "responses": ["Great! Let me check available flights for you."],
+         "context_set": "flight_search"
+        },
+        {
+         "tag": "confirm_booking",
+         "patterns": ["Book a flight", "Confirm booking", "Yes, I'm ready to book"],
+         "responses": ["Perfect! I just need a few more details to complete your booking."],
+         "context_set": "confirm_booking"
+        },
+        {
+         "tag": "complete_booking",
+         "patterns": ["My name is {name}", "I'm {name}", "I'll provide my details"],
+         "responses": ["Thank you, {name}! Your flight booking is confirmed."],
+         "context_set": ""
+        },
+        {
+         "tag": "goodbye",
+         "patterns": ["Goodbye", "See you later", "Bye"],
+         "responses": ["Have a safe journey! Goodbye.", "See you on board! Farewell."],
+         "context_set": ""
+        }
+    ]
 }
