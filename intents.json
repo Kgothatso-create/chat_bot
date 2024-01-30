@@ -73,6 +73,36 @@
          "patterns": ["Goodbye", "See you later", "Bye"],
          "responses": ["Have a safe journey! Goodbye.", "See you on board! Farewell."],
          "context_set": ""
-        }
+        },
+        {
+         "tag": "news",
+         "patterns": ["Tell me the latest news", "What's happening in the world?", "News update"],
+         "responses": ["I don't have the latest news. You might want to check a news website for that!"],
+         "context_set": ""
+      },
+      {
+         "tag": "weather",
+         "patterns": ["Tell me the weather", "What's the weather like today?", "Weather forecast"],
+         "responses": ["I'm sorry, I don't have real-time weather information. You can check a weather website for that!"],
+         "context_set": ""
+      },
+      {
+         "tag": "thanks",
+         "patterns": ["Thank you", "Thanks a lot", "Appreciate it", "Thanks"],
+         "responses": ["You're welcome!", "No problem!", "Glad I could help!"],
+         "context_set": ""
+      },
+      {
+         "tag": "insult",
+         "patterns": ["You're stupid", "You're a bad bot", "I hate you"],
+         "responses": ["I'm sorry if I upset you. How can I assist you better?", "I'm here to help. Let me know if you have questions."],
+         "context_set": ""
+      },
+      {
+         "tag": "joke",
+         "patterns": ["Tell me a joke", "Say something funny", "Joke time"],
+         "responses": ["Why don't scientists trust atoms? Because they make up everything!", "I used to play piano by ear, but now I use my hands."],
+         "context_set": ""
+      }
     ]
 }
